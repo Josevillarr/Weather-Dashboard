@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <header>
+         <h1>Weather Dashboard</h1>
+    </header>
+    <div class="container">
+        <aside>
+            <div class="card">
+                <h2>Search for a City:</h2>
+                <div class="input">
+                    <input type="text" id="city-input" placeholder="Enter City Here" class="search-bar">
+                    <button id="search-button" type="submit" class="btn">Search</button>
+                </div>
+                <div class="saved-search"></div>
+            </div>
+        </aside>
+        <div class="main-display" id="city-weather">
+            <h2 id="city-name" class="detail-list">Los Angeles</h2>
+            <p id="temp" class="detail-list">44.02</p>
+            <p id="wind" class="detail-list">15mph</p>
+            <p id="humidity" class="detail-list">50%</p>
+            <p id="uv-index" class="detail-list">UV Index</p>
+        </div>
+    </div>
+    <div class="forecast-box" id="weekly-cast">
+        <h2>5-Day Forecast:</h2>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
